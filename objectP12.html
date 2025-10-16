@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           const students = [
+            { name: "Narendra", age: 29 },
+            { name: "Rahul", age: 25 },
+            { name: "Priya", age: 32 },
+            { name: "Superiya", age: 39}
+          ];
+          const highest = students.reduce((a, b) => a.age > b.age ? a : b);
+          console.log(highest);
+          //find the object with the highest value in a property.
+    </script>
+</body>
+</html>
