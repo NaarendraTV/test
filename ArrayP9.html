@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function rotateArray(arr, k) 
+            {
+              const n = arr.length;
+               k = k % n; 
+               return [...arr.slice(-k), ...arr.slice(0, n - k)];
+            }
+               const numbers = [1, 2, 3, 4, 5];
+               const rotated = rotateArray(numbers, 2);
+               console.log(rotated);
+           //Rotate an array by k positions.
+   </script> 
+</body>
+</html>
