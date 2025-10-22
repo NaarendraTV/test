@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeFalsyValues(arr) 
+        {
+            return arr.filter(Boolean);
+        }
+         const mixedArray = [0, 1, false, 2, "", 3, null, undefined, NaN, 4];
+         const cleanArray = removeFalsyValues(mixedArray);
+         console.log(cleanArray);
+       //Write a function to remove falsy values (false, 0, "", null, undefined, NaN) from an array.
+    </script>
+</body>
+</html>
